@@ -1,0 +1,79 @@
+<html>
+
+<head>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="styles_stopwath.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@1,700&display=swap" rel="stylesheet">
+</head>
+
+
+
+
+
+<body>
+  <button onclick="myFunction()" id="buttonToggle" class="baba">Dark/Light</button>
+  
+
+  
+  
+
+
+  <div class="card text-dark mb-3" style="max-width: 50rem;">
+    <div class="card-body">
+      <h2 class="card-title" style="color: white;">StopClock</h2>
+      <h1 class="timeText" style="color:white;">
+        <span id="hour">00</span> :
+        <span id="min">00</span> :
+        <span id="sec">00</span> :
+        <span id="milisec">00</span>
+      </h1>
+
+      <button class="start-stop btn btn-outline-dark btn-lg" data-bs-toggle="tooltip" data-bs-placement="top" title="Start/Stop" onclick="startStop()" id="start" style="color: white;">Start</button>
+      <button class="reset btn btn-outline-dark btn-lg" data-bs-toggle="tooltip" data-bs-placement="top" title="Reset" onclick="reset()" style="color: white;">Reset</button>
+      <button class="rules btn btn-outline-dark btn-lg" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight" style="color: white;">Instructions</button>
+
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+        <div class="offcanvas-header">
+          <h5 class="heading" id="offcanvasRightLabel">INSTRUCTIONS</h5>
+          <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <h6>Rules:</h6> <br>
+          <br>
+          1) You have a total of 30 seconds
+          in the stopclock.<br>
+          2) Get atleast three “00” in the
+          millisecond bar to win the game.<br>
+          3) If you’ve lost, hit the reset button <br>
+          4) To proceed, hit the “Understood”
+          button down below <br>
+          5) Have Fun!
+        </div>
+      </div>
+      <br>
+      <h3 id="times"></h3>
+      <h4 class="record" id="records" style="color: white;">Display Board</h4>
+      <h4 id="winlose"></h4>
+
+    </div>
+  </div>
+
+  <script src="omale.js"></script>
+
+  <script>
+    function myFunction() {
+       var element = document.body;
+       element.classList.toggle("dark-mode");
+       
+    }
+    </script>
+</body>
+
+</html>

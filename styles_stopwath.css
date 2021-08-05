@@ -1,0 +1,63 @@
+.card{
+  margin: 150px auto;
+  text-align: center;
+  width: 600px;
+  height: 400px;
+  /* box-shadow: 0 8px 17px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19); */
+  background-color: #FF4B5C;
+  /* background-color: #08FFC8; */
+  /* background-color: #7C83FD; */
+  
+}
+body{
+  background-color: #E8F0F2;
+  
+}
+.offcanvas-body{
+  text-align: left;
+}
+.heading{
+  text-decoration: underline;
+}
+.card-title{
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+h1{
+  padding-top: 30px;
+  padding-bottom: 30px;
+  font-family: 'Roboto Mono', monospace;
+}
+.start-stop{
+  margin-right: 40px;
+  width: 150px;
+}
+.reset{
+  margin-right: 40px;
+  width: 150px;
+}
+.rules{
+  width: 150px;
+}
+.record{
+  padding-top: 40px;
+}
+
+.timeText{
+  font-family: 'Roboto', sans-serif;
+}
+#milisec{
+  color:yellow;
+}
+
+.dark-mode{
+  background-color: black;
+}
+
+/* button */
+.baba{
+  margin-left: 1.25rem;
+  margin-top: 1.25rem;
+  border-radius: 10px;
+  padding: 5px;
+}
